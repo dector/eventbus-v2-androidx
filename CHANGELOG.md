@@ -1,3 +1,6 @@
+### V2.5.0 AndroidX release
+* Migrated to `androidx` instead of `android.support`.
+
 ### V2.4.1 (2015-11-12) Bug fix release
 * Registering for sticky events now considers sticky events of subclasses, not just the exact same event type. This makes the semantic consistent to posting events. Note, that this may lead to subscribers being called more than once if matching sticky events of event type subclasses are available.
 * Workaround for an Android bug causing NoClassDefFoundError on some devices
